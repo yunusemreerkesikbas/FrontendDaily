@@ -206,4 +206,74 @@ body {
 .component--search ul li.active a {
   color: #2ccdea;
   font-weight: bold;
+}
+
+.component--filter-search {
+  background: #3d3f43;
+  border-radius: 5px;
+}
+.component--filter-search form {
+  height: 68px;
+  padding: 14px;
+  display: flex;
+}
+.component--filter-search form .input {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.component--filter-search form .input .search-icon {
+  width: 50px;
+  text-align: center;
+}
+.component--filter-search form .input input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+}
+.component--filter-search form .input input:focus {
+  outline: 0;
+}
+.component--filter-search form .input input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.component--filter-search form .input input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.component--filter-search form .input input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.component--filter-search form .input input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.component--filter-search form .input input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.component--filter-search form .input input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.component--filter-search form ul {
+  display: flex;
+  margin-left: 15px;
+}
+.component--filter-search form ul li label .text {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 0 25px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+.component--filter-search form ul li label input {
+  display: none;
+}
+.component--filter-search form ul li label input:checked + .text {
+  background-color: #303236;
+  color: #2ccdea;
 }/*# sourceMappingURL=main.css.map */

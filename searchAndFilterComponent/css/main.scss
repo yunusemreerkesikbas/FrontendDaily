@@ -198,3 +198,67 @@ body {
     }
   }
 }
+
+.component--filter-search {
+  background: #3d3f43;
+  border-radius: 5px;
+  form {
+    height: 68px;
+    padding: 14px;
+    display: flex;
+    .input {
+      display: flex;
+      align-items: center;
+      flex: 1;
+      .search-icon {
+        width: 50px;
+        text-align: center;
+      }
+      input {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        height: 40px;
+        border-radius: 5px;
+        font-size: 16px;
+        color: #fff;
+        &:focus {
+          outline: 0;
+        }
+        &::placeholder {
+          color: rgba(#fff, 0.5);
+        }
+
+        &::placeholder {
+          color: rgba(#fff, 0.5);
+        }
+      }
+    }
+    ul {
+      display: flex;
+      margin-left: 15px;
+      li {
+        
+        label {
+          .text {
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            font-size: 16px;
+            color: #fff;
+            padding: 0 25px;
+            cursor: pointer;
+            border-radius: 40px;
+          }
+          input {
+            display: none;
+            &:checked + .text {
+              background-color: #303236;
+              color: #2ccdea;
+            }
+          }
+        }
+      }
+    }
+  }
+}
