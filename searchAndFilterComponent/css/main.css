@@ -276,4 +276,95 @@ body {
 .component--filter-search form ul li label input:checked + .text {
   background-color: #303236;
   color: #2ccdea;
+}
+
+.component--filter {
+  background: #3d3f43;
+  border-radius: 5px;
+  padding: 40px 45px;
+}
+.component--filter form ul li {
+  display: flex;
+  align-items: center;
+}
+.component--filter form ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+.component--filter form ul li .key {
+  width: 100px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+.component--filter form ul li .value {
+  flex: 1;
+}
+.component--filter form ul li .value input, .component--filter form ul li .value select {
+  height: 50px;
+  width: 100%;
+  background: #303236;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+  padding: 0 20px;
+}
+.component--filter form ul li .value input:focus, .component--filter form ul li .value select:focus {
+  outline: 0;
+}
+.component--filter form ul li .value input::-moz-placeholder, .component--filter form ul li .value select::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.component--filter form ul li .value input:-ms-input-placeholder, .component--filter form ul li .value select:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.component--filter form ul li .value input::placeholder, .component--filter form ul li .value select::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.component--filter form ul li .value .selectbox {
+  position: relative;
+  background: #303236;
+  display: block;
+  border-radius: 5px;
+  height: 50px;
+}
+.component--filter form ul li .value .selectbox img {
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+}
+.component--filter form ul li .value .selectbox select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: transparent;
+  position: relative;
+  z-index: 2;
+}
+.component--filter form ul li.filter-button {
+  margin-top: 40px;
+  border-top: 1px solid #303236;
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.component--filter form ul li.filter-button a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  font-size: 16px;
+}
+.component--filter form ul li.filter-button button {
+  height: 50px;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, #31A5D9, #1E96A0);
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 7px 10px 5px rgba(43, 45, 48, 0.5);
 }/*# sourceMappingURL=main.css.map */

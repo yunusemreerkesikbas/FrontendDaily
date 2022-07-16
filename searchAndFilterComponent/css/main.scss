@@ -238,7 +238,6 @@ body {
       display: flex;
       margin-left: 15px;
       li {
-        
         label {
           .text {
             display: block;
@@ -256,6 +255,94 @@ body {
               background-color: #303236;
               color: #2ccdea;
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+.component--filter {
+  background: #3d3f43;
+  border-radius: 5px;
+  padding: 40px 45px;
+  form {
+    ul {
+      li {
+        display: flex;
+        align-items: center;
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+        .key {
+          width: 100px;
+          font-size: 16px;
+          font-weight: bold;
+          color: #fff;
+        }
+        .value {
+          flex: 1;
+          input,select {
+            height: 50px;
+            width: 100%;
+            background: #303236;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #fff;
+            padding: 0 20px;
+            &:focus {
+              outline: 0;
+            }
+            &::placeholder {
+              color: rgba(#fff, 0.5);
+            }
+          }
+          .selectbox{
+            position: relative;
+            background: #303236 ;
+            display: block;
+            border-radius: 5px;
+            height: 50px;
+            img{
+              position: absolute;
+              top: 50%;
+              right: 25px;
+              transform: translateY(-50%);
+            }
+            select{
+              appearance: none;
+              background: transparent;
+              position: relative;
+              z-index: 2;
+            }
+          }
+          
+        }
+        &.filter-button{
+          margin-top: 40px;
+          border-top: 1px solid #303236;
+          padding-top: 25px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          a{
+             color: rgba(#fff, .5);
+             text-decoration: none;
+             font-size: 16px;
+          }
+          button{
+            height: 50px;
+            padding: 0 30px;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(to right, #31A5D9, #1E96A0);
+            font-size: 16px;
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow:0 7px 10px 5px rgba(#2B2D30,  .5);
           }
         }
       }
