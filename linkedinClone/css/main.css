@@ -508,4 +508,110 @@ main .container .sidebar .footer .copyright img {
 main .container .content {
   flex: 1;
   margin: 0 30px;
+}
+main .container .content .create-post {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+main .container .content .create-post textarea {
+  width: 100%;
+  resize: none;
+  height: 60px;
+  font-size: 14px;
+}
+main .container .content .create-post textarea::-moz-placeholder {
+  color: #aaa;
+}
+main .container .content .create-post textarea:-ms-input-placeholder {
+  color: #aaa;
+}
+main .container .content .create-post textarea::placeholder {
+  color: #aaa;
+}
+main .container .content .create-post .actions {
+  border-top: 1px solid #edf0f5;
+  display: flex;
+  padding-top: 8px;
+}
+main .container .content .create-post .actions li {
+  flex: 1;
+}
+main .container .content .create-post .actions li label {
+  cursor: pointer;
+}
+main .container .content .create-post .actions li label input {
+  display: none;
+}
+main .container .content .create-post .actions li label,
+main .container .content .create-post .actions li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #17272f;
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 7px 0;
+}
+main .container .content .create-post .actions li label:hover,
+main .container .content .create-post .actions li a:hover {
+  background: #eee;
+}
+main .container .content .create-post .actions li label i,
+main .container .content .create-post .actions li a i {
+  margin-right: 8px;
+  font-size: 16px;
+}
+main .container .content .create-post .actions li label i.icon-camera,
+main .container .content .create-post .actions li a i.icon-camera {
+  color: #31b057;
+}
+main .container .content .create-post .actions li label i.icon-video,
+main .container .content .create-post .actions li a i.icon-video {
+  color: #388bf2;
+}
+main .container .content .create-post .actions li label i.icon-calendar,
+main .container .content .create-post .actions li a i.icon-calendar {
+  color: #fcb338;
+}
+main .container .content .create-post .actions li label i.icon-edit,
+main .container .content .create-post .actions li a i.icon-edit {
+  color: #e52a34;
+}
+main .container .content .filter-box {
+  height: 42px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(222, 222, 222, 0.32);
+  border-radius: 6px;
+  padding: 0 20px;
+}
+main .container .content .filter-box h6 {
+  font-size: 14px;
+  font-weight: normal;
+}
+main .container .content .filter-box .selectbox {
+  position: relative;
+}
+main .container .content .filter-box .selectbox select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 500;
+  color: #17272f;
+  padding-right: 30px;
+  position: relative;
+  top: -2px;
+}
+main .container .content .filter-box .selectbox i {
+  position: absolute;
+  right: 0;
+  font-size: 12px;
+  color: #aaa;
+  margin-left: 5px;
+  pointer-events: none;
 }/*# sourceMappingURL=main.css.map */
